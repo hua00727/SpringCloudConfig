@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: dev
   datasource:
     url: jdbc:mysql://localhost:3306/springCloudNews?useUnicode=true&characterEncoding=UTF-8&useSSL=true
     username: root
