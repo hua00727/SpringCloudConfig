@@ -1,14 +1,14 @@
-server: 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+server:
   port: 8764
-eureka: 
- client:
-   service-url:
-     defaultZone: http://localhost:8888/eureka/
-spring: 
-  application: 
+spring:
+  application:
     name: gateway
-zuul: 
-  routes: 
-    api: 
+zuul:
+  routes:
+    api:
       path: /api/**
       service-id: client
