@@ -6,7 +6,7 @@ spring:
 eureka:
   client: 
     service-id:
-      defaultZone ： http ： // localhost ： 8888 / eureka /
+      defaultZone: http://localhost:8888/eureka/
 #熔断器
 feign:
   hystrix:
